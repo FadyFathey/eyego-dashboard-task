@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,9 +51,11 @@ export default function Sidebar() {
         {/* Header */}
         <div className="flex items-center justify-between mb-12 pb-6 border-b border-gray-200/60">
           <div className="flex items-center gap-3">
-            <img
+            <Image
               src="https://i0.wp.com/eyego.ai/wp-content/uploads/2023/12/cropped-eyego-logo-png-1-1.png?fit=810%2C935&ssl=1"
               alt="EyeGo Logo"
+              width={48}
+              height={48}
               className="h-12 w-auto drop-shadow-sm"
             />
             <div className="text-sm text-gray-500 font-medium">Enterprise</div>
@@ -74,31 +77,6 @@ export default function Sidebar() {
         </div>
 
         <nav className="flex flex-col gap-2">
-          <Link
-            href="/dashboard"
-            className="group flex items-center gap-4 text-gray-700 hover:text-slate-800 hover:bg-slate-50 font-medium px-4 py-4 rounded-xl transition-all duration-200 border border-transparent hover:shadow-sm hover:border-slate-200"
-          >
-            <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-200">
-              <svg
-                className="w-5 h-5 text-blue-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                />
-              </svg>
-            </div>
-            <div>
-              <div className="font-semibold">Dashboard</div>
-              <div className="text-xs text-gray-500">Overview & Analytics</div>
-            </div>
-          </Link>
-
           <Link
             href="/dashboard/table"
             className="group flex items-center gap-4 text-gray-700 hover:text-slate-800 hover:bg-slate-50 font-medium px-4 py-4 rounded-xl transition-all duration-200 border border-transparent hover:shadow-sm hover:border-slate-200"
@@ -125,7 +103,7 @@ export default function Sidebar() {
           </Link>
 
           <Link
-            href="/dashboard/charts"
+            href="/dashboard/chart"
             className="group flex items-center gap-4 text-gray-700 hover:text-slate-800 hover:bg-slate-50 font-medium px-4 py-4 rounded-xl transition-all duration-200 border border-transparent hover:shadow-sm hover:border-slate-200"
           >
             <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-200">

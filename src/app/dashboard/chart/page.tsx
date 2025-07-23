@@ -4,6 +4,8 @@ import React from 'react';
 import { users } from '@/components/data';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 
+
+
 const cityCounts: { city: string; users: number }[] = [];
 
 users.forEach((user) => {

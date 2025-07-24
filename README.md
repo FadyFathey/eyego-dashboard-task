@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+EyeGo AI Dashboard 🚀
+<p align="center">
+<img src="https://i0.wp.com/eyego.ai/wp-content/uploads/2023/12/cropped-eyego-logo-png-1-1.png?fit=810%2C935&ssl=1" alt="EyeGo Logo" width="150">
+</p>
 
-## Getting Started
+<p align="center">
+A responsive and feature-rich dashboard application built with Next.js, TypeScript, and Firebase. It provides a user-friendly interface to manage and visualize user data, including authentication, a dynamic data table, and analytical charts.
+</p>
 
-First, run the development server:
+<p align="center">
+<a href="https://eyego-dashboard-task.vercel.app/"><strong>View Live Demo »</strong></a>
+</p>
 
-```bash
+✨ Features
+🔐 Authentication: Secure user authentication powered by Firebase (sign-up, login, logout, password reset).
+
+🛡️ Protected Routes: Dashboard area is accessible only to authenticated users.
+
+📊 Dynamic Data Table:
+
+Displays user data in a clear and organized table.
+
+Search: Real-time search to filter users by name.
+
+Sorting: Sort data by name, role, or status.
+
+Pagination: Easy navigation through large datasets.
+
+💾 State Persistence: User preferences (search, sort, pagination) are saved to localStorage using Redux Toolkit.
+
+📈 Data Visualization: Analytics page with a bar chart to visualize users per city, built with Recharts.
+
+📱 Responsive Design: Fully responsive layout with a collapsible sidebar for a great experience on all devices.
+
+🔔 Toast Notifications: User-friendly toast notifications for a better user experience.
+
+🛠️ Tech Stack
+<p align="left">
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+<img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux">
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase">
+<img src="https://img.shields.io/badge/Recharts-8884d8?style=for-the-badge" alt="Recharts">
+</p>
+
+🚀 Getting Started
+To get a local copy up and running, follow these simple steps.
+
+Prerequisites
+Node.js (v18.0 or higher)
+
+npm, yarn, or pnpm
+
+Installation
+Clone the repository:
+
+git clone https://github.com/your-username/eyego-dashboard-task.git
+cd eyego-dashboard-task
+
+Install dependencies:
+
+npm install
+# or
+yarn install
+# or
+pnpm install
+
+Set up environment variables:
+
+Create a .env.local file in the root of your project and add your Firebase project credentials:
+
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_Messaginger_id
+
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📂 Project Structure
+eyego-dashboard-task/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+public/ - Static assets
 
-## Learn More
+src/
 
-To learn more about Next.js, take a look at the following resources:
+app/ - Next.js App Router
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+api/ - API routes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+dashboard/ - Protected dashboard routes
 
-## Deploy on Vercel
+(auth)/ - Auth pages (login, signup)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+layout.tsx - Root layout
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+components/ - Reusable React components
+
+interfaces/ - TypeScript interfaces
+
+lib/ - Firebase configuration
+
+store/ - Redux Toolkit store
+
+.env.local - Environment variables
+
+next.config.ts - Next.js configuration
+
+部署 (Deployment)
+This application is ready to be deployed on Vercel.

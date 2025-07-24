@@ -8,7 +8,7 @@ A responsive and feature-rich dashboard application built with Next.js, TypeScri
 </p>
 
 <p align="center">
-<a href="https://eyego-dashboard-task.vercel.app/"><strong>View Live Demo »</strong></a>
+<a href="https://eyego-dashboard-task.vercel.app/signup"><strong>View Live Demo »</strong></a>
 </p>
 
 ✨ Features

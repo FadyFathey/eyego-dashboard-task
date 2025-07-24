@@ -8,10 +8,16 @@ A responsive and feature-rich dashboard application built with Next.js, TypeScri
 </p>
 
 <p align="center">
-<a href="https://eyego-dashboard-task.vercel.app/signup">
+<a href="https://eyego-dashboard-task.vercel.app/signup" target="_blank" rel="noopener noreferrer">
 <img src="https://img.shields.io/badge/View_Live_Demo-0070f3?style=for-the-badge&logo=vercel&logoColor=white" alt="View Live Demo"/>
 </a>
+&nbsp;&nbsp;
+<a href="https://drive.google.com/file/d/1r6aCSmEKBdjx2Doln8x7jNN9FYo4TuWX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+<img src="https://img.shields.io/badge/Watch_on_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Watch Video Demo on Drive"/>
+</a>
 </p>
+
+
 
 ✨ Features
 🔐 Authentication: Secure user authentication powered by Firebase (sign-up, login, logout, password reset).
